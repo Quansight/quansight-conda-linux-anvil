@@ -1,4 +1,5 @@
-FROM condaforge/linux-anvil-cos7-x86_64:latest
+ARG BASE_CONTAINER=condaforge/linux-anvil-cos7-x86_64:latest
+FROM $BASE_CONTAINER
 
 ARG NB_USER="jovyan"
 ARG NB_UID="1000"
